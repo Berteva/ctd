@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC - Sala 3</title>
+</head>
+<body>
+    <script>
+        /* Felipe Bertevello
+            Matheus Kramer
+            Tulio Santos
+            Vando Borges
+            Wesley Tessmann
+            Thomas Bertelli*/
+
+            // Nível I - Calculadora simples de IMC.
+
+            // Variáveis necessárias
+
+            var nome = prompt('Bem vindo a calculadora de IMC Digital House. Por favor, insira seu nome.');
+            var idade = prompt('Agora, digite sua idade.');
+            var altura = prompt('Digite a sua altura.');
+            var peso = prompt('Digite o seu peso.');
+
+            // Função para calcular o IMC
+        
+            function calcularIMC(){
+                alert('Seu IMC é: ' + peso / (altura * altura));  
+            }
+
+            calcularIMC();
+
+            // Nível II - Enquadrar o usuário na tabela de IMC com grau de obesidade.
+
+            function enquadrarUsuario(){
+                calcularIMC < 18.5 ? alert('Sua classificação de IMC é: MAGREZA com grau de obesidade 0') : 
+                calcularIMC < 24.9 ? alert('Sua classificação de IMC é: NORMAL com grau de obesidade 0') : 
+                calcularIMC < 29.9 ? alert('Sua classificação de IMC é: SOBREPESO com grau de obesidade I') : 
+                calcularIMC < 39.9 ? alert('Sua classificação de IMC é: OBESIDADE com grau de obesidade II') : 
+                alert('Sua classificação de IMC é: OBESIDADE GRAVE com grau de obesidade III');
+            }
+
+            enquadrarUsuario();
+
+    </script>
+
+    
+</body>
+</html>
